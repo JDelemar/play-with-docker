@@ -21,4 +21,10 @@ Some files put together to play with play-with-docker (PWD)
             <p>Sets up a docker swarm with manager nodes on play-with-docker</p>
         </td>
     </tr>
+    <tr>
+        <td><a href="https://github.com/JDelemar/play-with-docker/tree/master/wordpress">wordpress</a></td>
+        <td>
+            <p>Launch WordPress and MySql</p>
+        </td>
+    </tr>
 </table>
