@@ -1,0 +1,64 @@
+# docker-compose.yml
+# wordpress swarm
+# www.play-with-docker.com
+# create a docker-compose.yml file with this information
+#   can use vi, vim, nano, or cat > docker-compose.yml, CTR-Z to end the file
+# deploy with
+#   docker deploy --compose-file docker-compose.yml stack
+# remove with
+#   docker stack rm stack
+# other commands
+#   verify all nodes are added correctly
+#     docker node ls
+#   check swarm information
+#     docker service ps <container_name>
+#     docker service ls
+#     docker network inspect mynet
+version: "3"
+services:
+  wordpress:
+    # latest as of 20170512
+    image: wordpress:4.7.4-php5.6-apache
+    depends_on:
+      - mysql
+    environment:
+      - WORDPRESS_DB_PASSWORD=password
+    ports:
+      - 80:80
+    networks:
+      - mynet 
+  mysql:
+    # latest as of 20170512
+    image: mysql:5.7.18
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    ports:
+      - 3306:3306
+    networks:
+      - mynet
+  # optional begin
+  # portainer1:
+  #   image: portainer/portainer
+  #   ports:
+  #     - 9001:9000
+  #   deploy:
+  #     placement:
+  #       constraints: [node.hostname == node1]   
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   networks:
+  #     - mynet
+  # portainer2:
+  #   image: portainer/portainer
+  #   ports:
+  #     - 9002:9000
+  #   deploy:
+  #     placement:
+  #       constraints: [node.hostname == node2]   
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   networks:
+  #     - mynet
+  # optional end
+networks:
+  mynet:
