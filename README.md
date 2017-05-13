@@ -1,4 +1,4 @@
-# play-with-docker
+# Playing with play-with-docker
 
 Some files put together to play with play-with-docker (PWD)
 
