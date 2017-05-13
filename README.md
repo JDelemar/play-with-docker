@@ -18,7 +18,7 @@ Some files put together to play with play-with-docker (PWD)
     <tr>
         <td><a href="https://github.com/JDelemar/play-with-docker/tree/master/setup">setup</a></td>
         <td>
-            <p>Sets up a docker swarm with manager nodes on play-with-docker</p>
+            <p>Sets up a docker swarm with manager nodes on PWD</p>
         </td>
     </tr>
     <tr>
