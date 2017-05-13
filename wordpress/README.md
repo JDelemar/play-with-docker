@@ -3,6 +3,7 @@
 This docker file sets up Wordpress and MySql on [play-with-docker](http://labs.play-with-docker.com/)
 
 <br/>
+
 Create a docker-compose.yml file 
 ```
 vi, vim, nano, or cat > docker-compose.yml, CTR-Z to end the file
