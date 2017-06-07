@@ -8,6 +8,23 @@ Why would you want to do this?
 
 #### Steps:
 1. Clone this
+   ```
+   # clone the whole repository
+   git clone https://github.com/JDelemar/play-with-docker.git
+   ```
+   **OR**
+   ```
+   # do a sparse clone for this directory
+   # create an empty repository
+   mkdir play-with-docker
+   cd play-with-docker
+   git init
+   git remote add -f origin https://github.com/JDelemar/play-with-docker.git
+   git config core.sparseCheckout true
+   # define which files/folders to check out
+   echo "ubuntudesktop" >> .git/info/sparse-checkout
+   ```
+   `git pull origin master`  **OR** a shallow clone `git pull --depth=1 origin master`
 2. Change directory to `ubuntudesktop`
 3. Start the containers with `docker-compose up -d`
 
