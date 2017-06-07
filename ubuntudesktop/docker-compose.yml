@@ -1,0 +1,31 @@
+# Ubuntu Desktop LXDE VNC
+# Node File Manager
+# install Portainer???
+
+version: "2"
+
+services:
+  # docker run -d -v $PWD:/root/tmp -p 6080:80 -p 5900:5900 dorowu/ubuntu-desktop-lxde-vnc
+  desktop:
+    build: ./desktop
+    ports:
+      - 8080:80
+      - 5900:5900
+    container_name: desktop
+    volumes:
+      - $PWD:/root/tmp
+    networks:
+      - appnet
+  # docker run -d -p 8080:8080 -v $PWD:/app --name fmanode node:alpine sh -c 'while sleep 360000; do :; done'
+  nodefm:
+    build: ./nodefm
+    ports:
+      - 8081:8080
+    container_name: nodefm 
+    volumes:
+      - $PWD:/fmgr
+    networks:
+      - appnet
+networks:
+  appnet:
+    driver: bridge
