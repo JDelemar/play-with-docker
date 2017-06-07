@@ -6,19 +6,34 @@ Why would you want to do this?
   * Maybe you want to experiment with Docker and use Docker images that have a graphic user interface without doing it on your own computer.
   * Maybe you want to experiment with Docker and you have a slow Internet connection which inhibits you from downloading large images and/or modifying images.
 
-<br/>
-<br/>
-##### Steps:
+#### Steps:
 1. Clone this
+   ```
+   # clone the whole repository
+   git clone https://github.com/JDelemar/play-with-docker.git
+   ```
+   **OR**
+   ```
+   # do a sparse clone for this directory
+   # create an empty repository
+   mkdir play-with-docker
+   cd play-with-docker
+   git init
+   git remote add -f origin https://github.com/JDelemar/play-with-docker.git
+   git config core.sparseCheckout true
+   # define which files/folders to check out
+   echo "ubuntudesktop" >> .git/info/sparse-checkout
+   ```
+   `git pull origin master`  **OR** a shallow clone `git pull --depth=1 origin master`
 2. Change directory to `ubuntudesktop`
 3. Start the containers with `docker-compose up -d`
 
-<br/>
-##### The following ports will be exposed
+
+#### The following ports will be exposed:
 |Port|Application|Purpose
 |----|-----------|-------
 |8081|Node File Manager|Allows you to download and upload files to PWD using your browser
 |8080|Ubuntu Desktop LXDE|This is the desktop environment<br/>Port 5900 is also exposed but not utilized
 
-<br/>
+
 When you are in the desktop, executing `start.sh` will install Node.js and Visual Studio Code

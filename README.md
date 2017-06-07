@@ -12,19 +12,10 @@ Some files put together to play with play-with-docker (PWD)
 > A live version is available at: http://play-with-docker.com/
 
 <br/>
-<table class='tg'>
-    <col width='30%'>
-    <col width='70%'>
-    <tr>
-        <td><a href="https://github.com/JDelemar/play-with-docker/tree/master/setup">setup</a></td>
-        <td>
-            <p>Sets up a docker swarm with manager nodes on PWD</p>
-        </td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/JDelemar/play-with-docker/tree/master/wordpress">wordpress</a></td>
-        <td>
-            <p>Launch WordPress and MySql</p>
-        </td>
-    </tr>
-</table>
+
+|Projects|Description
+|--------|-----------
+|[setup](https://github.com/JDelemar/play-with-docker/tree/master/setup)|Sets up a docker swarm with manager nodes on PWD
+|[ubuntudesktop](https://github.com/JDelemar/play-with-docker/tree/master/ubuntudesktop)|Launch an Ubuntu LXDE desktop in PWD
+|[wordpress](https://github.com/JDelemar/play-with-docker/tree/master/wordpress)|Launch WordPress and MySql
+
