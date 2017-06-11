@@ -35,5 +35,6 @@ Why would you want to do this?
 |8081|Node File Manager|Allows you to download and upload files to PWD using your browser
 |8080|Ubuntu Desktop LXDE|This is the desktop environment
 
+In addition ports 3000 and 3001 are also exposed. These ports can be used if you build an application and need to expose a port in the Ubuntu Desktop container (8080/3000) or the Node File Manager container (8081/3001)
 
 When you are in the desktop, executing `start.sh` will install Node.js and Visual Studio Code
