@@ -33,7 +33,7 @@ Why would you want to do this?
 |Port|Application|Purpose
 |----|-----------|-------
 |8081|Node File Manager|Allows you to download and upload files to PWD using your browser
-|8080|Ubuntu Desktop LXDE|This is the desktop environment<br/>Port 5900 is also exposed but not utilized
+|8080|Ubuntu Desktop LXDE|This is the desktop environment
 
 
 When you are in the desktop, executing `start.sh` will install Node.js and Visual Studio Code
