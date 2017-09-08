@@ -10,7 +10,10 @@ services:
     build: ./desktop
     ports:
       - 8080:80
-      - 5900:5900
+      # not using vnc
+      # - 5900:5900
+      # extra port for building stuff
+      - 3000:3000
     container_name: desktop
     volumes:
       - $PWD:/root/tmp
@@ -21,6 +24,8 @@ services:
     build: ./nodefm
     ports:
       - 8081:8080
+      # extra port for building stuff
+      - 3001:3001
     container_name: nodefm 
     volumes:
       - $PWD:/fmgr

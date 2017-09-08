@@ -12,6 +12,7 @@ RUN apt-get remove -y --purge libreoffice* \
 
 # XFCE
 RUN apt-get update \
+    && apt-get install git -y \
     && apt-get install -y xfce4 
 
 # # Node and npm
