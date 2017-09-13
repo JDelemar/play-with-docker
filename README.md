@@ -18,6 +18,5 @@ Some files put together to play with play-with-docker (PWD)
 |Projects|Description
 |--------|-----------
 |[setup](https://github.com/JDelemar/play-with-docker/tree/master/setup)|Sets up a docker swarm with manager nodes on PWD
-|[ubuntudesktop](https://github.com/JDelemar/play-with-docker/tree/master/ubuntudesktop)|Launch an Ubuntu LXDE desktop in PWD
+|[ubuntudesktop](https://github.com/JDelemar/play-with-docker/tree/master/ubuntudesktop)|Launch an Ubuntu LXDE desktop and Node File Manager in PWD
 |[wordpress](https://github.com/JDelemar/play-with-docker/tree/master/wordpress)|Launch WordPress and MySql
-

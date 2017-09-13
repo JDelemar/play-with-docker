@@ -1,12 +1,16 @@
-# Ubuntu Desktop
+# Ubuntu Desktop and Node File Manager
 
-This project sets up an Ubuntu LXDE desktop in [play-with-docker](http://labs.play-with-docker.com/)
+This project sets up an Ubuntu LXDE desktop and node file manager on a web server in [play-with-docker](http://labs.play-with-docker.com/). [Node File Manager by efeiefei](https://github.com/efeiefei/node-file-manager) allows you to compress and copy things to and from your play with docker session using your browser. 
 
+#### Ubuntu LXDE desktop
 <img src="https://github.com/JDelemar/play-with-docker/blob/master/ubuntudesktop/images/UbuntuDesktop.png"/>
+
+#### Node File Manager
+<img src="https://github.com/JDelemar/play-with-docker/blob/master/ubuntudesktop/images/NodeFileManager.png"/>
 
 Why would you want to do this? 
   * Maybe you want to experiment with Docker and use Docker images that have a graphic user interface without doing it on your own computer.
-  * Maybe you want to experiment with Docker and you have a slow Internet connection which inhibits you from downloading large images and/or modifying images.
+  * Maybe you have a slow Internet connection which inhibits you from downloading large images and/or modifying images.
 
 #### Steps:
 1. Clone this
@@ -27,7 +31,7 @@ Why would you want to do this?
    echo "ubuntudesktop" >> .git/info/sparse-checkout
    ```
    `git pull origin master`  **OR** a shallow clone `git pull --depth=1 origin master`
-2. Change directory to `ubuntudesktop`
+2. Change directory to ubuntudesktop `cd ubuntudesktop`
 3. Start the containers with `docker-compose up -d`
 
 
