@@ -12,6 +12,8 @@ Some files put together to play with play-with-docker (PWD)
 > A live version is available at: http://play-with-docker.com/
 
 <br/>
+<img src="https://github.com/JDelemar/play-with-docker/blob/master/ubuntudesktop/images/PWD.png"/>
+<br/>
 
 |Projects|Description
 |--------|-----------

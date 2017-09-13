@@ -2,6 +2,8 @@
 
 This project sets up an Ubuntu LXDE desktop in [play-with-docker](http://labs.play-with-docker.com/)
 
+<img src="https://github.com/JDelemar/play-with-docker/blob/master/ubuntudesktop/images/UbuntuDesktop.png"/>
+
 Why would you want to do this? 
   * Maybe you want to experiment with Docker and use Docker images that have a graphic user interface without doing it on your own computer.
   * Maybe you want to experiment with Docker and you have a slow Internet connection which inhibits you from downloading large images and/or modifying images.
